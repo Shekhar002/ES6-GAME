@@ -1,0 +1,17 @@
+button{
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
