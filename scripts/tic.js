@@ -76,6 +76,6 @@ function reset(){
         btn[i].innerText= '';
     }
     gameEnd=false;
-    document.querySelector("#results").innertext="";
+    document.querySelector("#results").textContent="";
 }
 bindEvents();
