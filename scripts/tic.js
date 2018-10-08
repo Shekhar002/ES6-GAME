@@ -19,7 +19,7 @@ function showTic() {
 }
 
 function bindEvents(){
-    buttons = document.querySelectorAll("button");
+    buttons = document.querySelectorAll("#btn");
     for(let button of buttons) {
         button.addEventListener("click", showTic);
     }
@@ -38,38 +38,44 @@ function isRowSame(first, second, third) {
 
 function isGameOver() {
     if(isRowSame(0,1,2)){
-        document.querySelector("#results").innerText = "Game Over";
+        document.querySelector("#results").innerText = "GAME OVER";
         gameEnd = true;
     }
     else if(isRowSame(3,4,5)){
-        document.querySelector("#results").innerText = "Game Over";
+        document.querySelector("#results").innerText = "GAME OVER";
         gameEnd = true;
     }
     else if(isRowSame(6,7,8)){
-        document.querySelector("#results").innerText = "Game Over";
+        document.querySelector("#results").innerText = "GAME OVER";
         gameEnd = true;
     }
     else if(isRowSame(0,4,8)){
-        document.querySelector("#results").innerText = "Game Over";
+        document.querySelector("#results").innerText = "GAME OVER";
         gameEnd = true;
     }
     else if(isRowSame(0,3,6)){
-        document.querySelector("#results").innerText = "Game Over";
+        document.querySelector("#results").innerText = "GAME OVER";
         gameEnd = true;
     }
     else if(isRowSame(1,4,7)){
-        document.querySelector("#results").innerText = "Game Over";
+        document.querySelector("#results").innerText = "GAME OVER";
         gameEnd = true;
     }
     else if(isRowSame(2,5,8)){
-        document.querySelector("#results").innerText = "Game Over";
+        document.querySelector("#results").innerText = "GAME OVER";
         gameEnd = true;
     }
     else if(isRowSame(2,4,6)){
-        document.querySelector("#results").innerText = "Game Over";
+        document.querySelector("#results").innerText = "GAME OVER";
         gameEnd = true;
     }
 }
-
-
+function reset(){
+    var btn = document.querySelectorAll("#btn");
+    for(let i=0;i<=btn.length;i++){
+        btn[i].innerText= '';
+    }
+    gameEnd=false;
+    document.querySelector("#results").innertext="";
+}
 bindEvents();
