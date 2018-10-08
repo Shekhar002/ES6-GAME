@@ -75,7 +75,7 @@ function reset(){
     for(let i=0;i<btn.length;i++){
         btn[i].innerText= '';
     }
-    gameEnd=false;
     document.querySelector("#results").textContent="";
+    gameEnd=false;   
 }
 bindEvents();
