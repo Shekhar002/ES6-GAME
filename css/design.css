@@ -1,7 +1,7 @@
 button{
     width: 100px;
     height: 100px;
-    background-color: lightskyblue;
+    background-color: cornflowerblue;
     display: inline-block;
     margin: 5px;
     font-size: 20px;
@@ -13,5 +13,97 @@ button{
 }
 h2{
     text-align: center;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 50px;
 }
+.res{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#results{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#reset {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+  }
+  
+  #reset span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+#reset span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #reset:hover span {
+    padding-right: 25px;
+  }
+  
+  #reset:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  #game {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+  }
+  
+  #game span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #game span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #game:hover span {
+    padding-right: 25px;
+  }
+  
+  #game:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
